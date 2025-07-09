@@ -1,0 +1,162 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: #121212;
+    color: #f0f0f0;
+    padding: 20px;
+
+}
+
+header {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    background-color: #2E2E2E;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: large;
+
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #1a8f41;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #2E2E2E;
+
+}
+
+a.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+a.button.delete {
+    background-color: #dc3545;
+}
+
+li {
+    list-style-type: none;
+}
+
+.items-header {
+    display: flex;
+    gap: 45px;
+    font-size: 35px;
+
+}
+
+.items-main {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #1a8f41;
+}
+
+.btn-nav {
+    background-color: #2d3d2f;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.btn-main {
+    background-color: #2E2E2E;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+.listas {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+.acoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.entrada {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    background-color: #2E2E2E;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.cadastros{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.formulario{
+    margin-top: 10px;
+    margin-bottom: 70px;
+}
+
+.btn-submit{
+    font-size: 35px;
+    color: black;
+}
+
+.btn-cadastros{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.inputs-cadastros{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}

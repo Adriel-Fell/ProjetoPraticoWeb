@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Alocações da Livraria</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="items-header">
+                <a href="./listaUsuario.php">
+                    <li class="btn-nav">Consultar clientes</li>
+                </a>
+                <a href="./listaLivro.php">
+                    <li class="btn-nav">Consultar Livros</li>
+                </a>
+                <a href="./listaAlocacao.php">
+                    <li class="btn-nav">Consultar Alocações</li>
+                </a>
+                <a href="../index.html">
+                    <li class="btn-nav">Tela Principal</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="cadastros">
+        <section>
+            <div class="title">
+                <h2>Cadastro de Alocações</h2>
+            </div>
+
+            <form class="formulario" action="processaCadastroAlocacao.php" method="post">
+                <div class="inputs-cadastros">
+                    <div>
+                        <label>*ID do Usuario:</label>
+                        <input class="entrada" type="text" name="idUsuario" required>
+                        <label>*ID do Livro:</label>
+                        <input class="entrada" type="text" name="idLivro" required>
+                    </div>
+                </div>
+
+
+                <div class="btn-cadastros">
+                    <button class="btn-submit" type="submit">Cadastrar</button>
+                    <a href="listaAlocacao.php"><button class="btn-submit" type="button">Cancelar</button></a>
+                </div>
+
+            </form>
+        </section>
+
+        <section>
+            <ul id="bookList">
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

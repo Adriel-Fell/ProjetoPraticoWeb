@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Livros ao sistema da Livraria</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="items-header">
+                <a href="./listaUsuario.php">
+                    <li class="btn-nav">Consultar clientes</li>
+                </a>
+                <a href="./listaLivro.php">
+                    <li class="btn-nav">Consultar Livros</li>
+                </a>
+                <a href="./listaAlocacao.php">
+                    <li class="btn-nav">Consultar Alocações</li>
+                </a>
+                <a href="../index.html">
+                    <li class="btn-nav">Tela Principal</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="cadastros">
+        <section>
+            <div class="title">
+                <h2>Cadastro de Livros</h2>
+            </div>
+
+            <form class="formulario" action="processaCadastroLivro.php" method="post">
+                <div class="inputs-cadastros">
+                    <div>
+                        <label>*Titulo da obra:</label>
+                        <input class="entrada" type="text" name="titulo" required id="titulo">
+                        <label>*Tema:</label>
+                        <input class="entrada" type="text" name="tema" required id="tema">
+                        <label>*Autor</label>
+                        <input class="entrada" type="text" name="autor" required id="autor">
+                    </div>
+                </div>
+
+                <div class="btn-cadastros">
+                    <button class="btn-submit" type="submit">Cadastrar</button>
+                    <a href="listaLivro.php"><button class="btn-submit" type="button">Cancelar</button></a>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+
+    <div class="title">
+        <h2>Pesquisa de Livros</h2>
+    </div>
+
+
+    <div class="inputs-cadastros">
+        <input class="entrada" type="text" id="pedido">
+
+    </div>
+    <div class="btn-cadastros">
+        <button lass="btn-submit" onclick="findBooks()">Pesquisar</button>
+    </div>
+
+
+    <section class="listas">
+        <table id="bookList">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Tema</th>
+                    <th>Autor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+
+</body>
+
+</html>
+
+<script src="booksAPI.js"></script>
